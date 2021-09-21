@@ -1,11 +1,19 @@
 import galleryItems from './galleryItems.js';
+import {
+  listEl,
+  buttonEl,
+  lightboxEl,
+  lightboxOverlayEl,
+  lightboxContentEl,
+  largeImage,
+} from './variables.js';
 
-const listEl = document.querySelector('.js-gallery');
-const buttonEl = document.querySelector('button[data-action="close-lightbox"]');
-const lightboxEl = document.querySelector('.lightbox');
-const lightboxOverlayEl = document.querySelector('.lightbox__overlay');
-const lightboxContentEl = document.querySelector('.lightbox__content');
-const largeImage = document.querySelector('.lightbox__image');
+// const listEl = document.querySelector('.js-gallery');
+// const buttonEl = document.querySelector('button[data-action="close-lightbox"]');
+// const lightboxEl = document.querySelector('.lightbox');
+// const lightboxOverlayEl = document.querySelector('.lightbox__overlay');
+// const lightboxContentEl = document.querySelector('.lightbox__content');
+// const largeImage = document.querySelector('.lightbox__image');
 
 const itemEl = ({ preview, original, description }) => {
   return `<li class="gallery__item"><a
